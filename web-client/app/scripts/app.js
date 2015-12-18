@@ -194,7 +194,7 @@ angular.module('webClientApp', [
    */
   .config(['$authProvider', 'API_HOST', function($authProvider, API_HOST) {
     $authProvider.configure({
-      apiUrl: '//' + API_HOST,
+      apiUrl: 'https://' + API_HOST,
       omniauthWindowType: 'newWindow',
       confirmationSuccessUrl:  '//' + window.location.host + '/login',
       passwordResetSuccessUrl: ('//' + window.location.host +
